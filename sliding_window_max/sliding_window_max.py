@@ -4,7 +4,9 @@ Returns: a List of integers
 '''
 def sliding_window_max(nums, k):
     # Your code here
-
+    # Need empty arr for final values
+    # Assign var to the element moving from l to r
+    # Base case: if k is max value return nums
     pass
 
 

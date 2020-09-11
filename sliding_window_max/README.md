@@ -26,3 +26,21 @@ Run the test file by executing  `python test_sliding_window_max.py`.
 There is also a larger test file that you can test your code against by running `python test_sliding_window_max_large_input.py`.
 
 > Note: The text files in the `data/` directory are used by the large input tests. 
+
+# Understand 
+# -- Find the highest value elements in a moving range of values 
+# -- Uses a single value as base reference for min value
+# -- Will return the max value for each window inspected
+# -- Return all max values from each window
+
+# Plan
+# -- Recursive or Iterative? 
+#   -- Since we're not looping over the information until we get to zero but
+#   -- rather taking a snapshot of sections as we move through the array
+#   -- in a linear search, don't need for a loop
+# -- Save max values in new list: max_nums = []
+# -- Break arr into chunks
+#   -- k = [1], left_k = nums + 1, right_k = nums - 1
+# -- Find max value in each chunk & add to solution arr
+#   -- for i in (x, y, z): k <= i max_nums.append(i) 
+# -- Iterate through each chunk of data & pick out the max value
