@@ -21,3 +21,18 @@ Can you do this in `O(n)` time with `O(n)` space _without_ using division?
 
 ## Testing
 Run the test file by executing `python test_product_of_all_other_numbers.py`.
+
+# Understand
+# -- return an array that is the sum of all the numbers in the array 
+# -- except at the index it's iterating over
+
+# Plan
+# Want to find the product of all integers except one
+# -- need an empty array to store the products in
+# -- Iterate through the list (recursive?)
+#   -- find base case
+#   -- need to multiply ints around current index
+# -- How do we determine which is the integer & what's to be multiplied?
+#   -- split arr in 2: left side of the cur_int & right side of the cur_int
+
+
